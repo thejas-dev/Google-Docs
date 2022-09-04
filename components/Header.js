@@ -11,7 +11,7 @@ function Header() {
       const{data: session} = useSession()
 
 	return(
-		<header className="flex overflow-x-hidden items-center sticky top-0 z-50 px-2 py-2 shadow-md
+		<header className="flex overflow--hidden items-center sticky top-0 z-50 px-2 py-2 shadow-md
 		bg-white" > 
 			    
       			<Button 
