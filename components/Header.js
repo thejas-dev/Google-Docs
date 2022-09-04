@@ -4,6 +4,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import DescriptionIcon from '@mui/icons-material/Description'
 import SearchIcon from '@mui/icons-material/Search'
 import AppsIcon from '@mui/icons-material/Apps'
+import LogoutIcon from '@mui/icons-material/Logout'
 import {useSession,signOut} from 'next-auth/react'
 
 function Header() {
@@ -11,18 +12,19 @@ function Header() {
       const{data: session} = useSession();
 
 	return(
-		<header className="flex overflow--hidden items-center sticky top-0 z-50 px-2 py-2 shadow-md
+		<header className="flex overflow-x-hidden items-center sticky top-0 z-50 px-2 py-2 shadow-md
 		bg-white" > 
 			    
       			<Button 
       			color="blue-gray"
       			ripple={true}
       			variant="text"
-      			className="rounded-full justify-center items-center flex bg-transparent shadow-none hover:shadow-none items-center md:inline-flex h-20 w-20 border-0 hidden md:inline-flex"
+      			className="rounded-full justify-center items-center flex bg-transparent shadow-none 
+                        hover:shadow-none items-center h-20 w-20 border-0 hidden md:inline-flex"
       			>
       			<MenuIcon className="text-blue-500 mx-auto hidden md:inline-flex" />
       			</Button>
-      			<DescriptionIcon className="text-5xl hidden md:inline-flex text-blue-500"/>
+      			<DescriptionIcon className="text-5xl text-blue-500 hidden md:inline-flex"/>
       			<h1 className="hidden md:inline-flex ml-2 text-gray-700
       			text-2xl">
       			Docs
@@ -44,14 +46,18 @@ function Header() {
       			<AppsIcon className="text-3xl hidden md:inline-flex text-gray-600" />
       			</Button>
       			
-
-      			<img 
-      			loading="lazy"
-      			onClick={signOut}
-      			className="cursor-pointer h-12 w-12 rounded-full ml-2 mr-3"
-      			src={session?.user?.image}
-      			alt={session?.user?.name}
-      			/>
+                        {session?.user?.image ? 
+                        <img 
+                        loading="lazy"
+                        onClick={signOut}
+                        className="cursor-pointer h-12 w-12 rounded-full ml-2 mr-3"
+                        src={session?.user?.image}
+                        alt="Logout"
+                        />   :  <Logout
+                        className="text-3xl text-blue-500"
+                        />
+                        }
+      			
       </header>
 
 		)
