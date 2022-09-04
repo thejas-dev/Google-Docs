@@ -54,7 +54,7 @@ function Header() {
                         src={session?.user?.image}
                         alt="Logout"
                         />   :  <Logout
-                        className="text-3xl text-blue-500"
+                        className="text-4xl text-blue-500 ml-2 mr-3"
                         />
                         }
       			
