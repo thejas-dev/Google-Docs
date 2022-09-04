@@ -3,4 +3,7 @@
 
 It uses Real time database for individual Users by using their Gmail Id....
 
-## And a Lot More useful Featured.
+# Embeeded With Rich Text Editor for writing and editing Documents
+
+Real time Auto Save is enabled so no need to worry in Data Loss...:)
+
