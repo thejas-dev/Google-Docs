@@ -31,7 +31,7 @@ function Header() {
       			</h1>
 
 
-      			<div className="mx-5 md:mx-20 flex flex-grow items-center px-2
+      			<div className="mx-3 md:mx-20 flex flex-grow items-center px-2
       			py-2 bg-gray-100 text-gray-600
       			rounded-lg focus-within:text-gray-600 focus-within:shadow-md">
       				<SearchIcon className="text-3xl text-gray-600 "/>
