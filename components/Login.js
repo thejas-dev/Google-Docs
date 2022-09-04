@@ -28,7 +28,7 @@ export default function Login({providers}) {
 					</Button>
 			<a 
 				href="https://www.instagram.com/nuthejashari/"
-				className="absolute bottom-2 right-2 text-sm text-white mt-1">
+				className="absolute bottom-2 right-2 text-sm mt-1">
 				<AiOutlineInstagram className="h-5 w-5 absolute right-[182px]"/>Made With ❤️ by Thejas Hari
 			</a>
 		</div>
