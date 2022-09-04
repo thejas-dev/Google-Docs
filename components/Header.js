@@ -18,7 +18,7 @@ function Header() {
       			color="blue-gray"
       			ripple={true}
       			variant="text"
-      			className=" rounded-full justify-center items-center flex bg-transparent shadow-none hover:shadow-none items-center md:inline-flex h-20 w-20 border-0"
+      			className="hidden md:inline-flex rounded-full justify-center items-center flex bg-transparent shadow-none hover:shadow-none items-center md:inline-flex h-20 w-20 border-0"
       			>
       			<MenuIcon className="text-blue-500 mx-auto hidden md:inline-flex" />
       			</Button>
@@ -41,7 +41,7 @@ function Header() {
       			variant="text"
       			ripple={true}
       			className="rounded-lg hidden md:inline-flex md:ml-20 w-20 border-0">
-      			<AppsIcon className="text-3xl text-gray-600" />
+      			<AppsIcon className="text-3xl hidden md:inline-flex text-gray-600" />
       			</Button>
       			
 
