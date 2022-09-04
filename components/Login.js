@@ -1,6 +1,7 @@
 import { Button } from "@material-tailwind/react/components/Button";
 import Image from 'next/image'
 import { getProviders , signIn, useSession } from 'next-auth/react'
+import {AiOutlineInstagram} from 'react-icons/ai'
 
 
 export default function Login({providers}) {
@@ -25,7 +26,11 @@ export default function Login({providers}) {
 						>
 						Login
 					</Button>
-				
+			<a 
+				href="https://www.instagram.com/nuthejashari/"
+				className="absolute bottom-2 right-2 text-sm text-white mt-1">
+				<AiOutlineInstagram className="h-5 w-5 absolute right-[182px]"/>Made With ❤️ by Thejas Hari
+			</a>
 		</div>
 
 
