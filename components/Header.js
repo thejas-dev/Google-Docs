@@ -20,9 +20,9 @@ function Header() {
       			variant="text"
       			className=" rounded-full justify-center items-center flex bg-transparent shadow-none hover:shadow-none items-center md:inline-flex h-20 w-20 border-0"
       			>
-      			<MenuIcon className="text-blue-500 mx-auto" />
+      			<MenuIcon className="text-blue-500 mx-auto hidden md:inline-flex" />
       			</Button>
-      			<DescriptionIcon className="text-5xl text-blue-500"/>
+      			<DescriptionIcon className="text-5xl hidden md:inline-flex text-blue-500"/>
       			<h1 className="hidden md:inline-flex ml-2 text-gray-700
       			text-2xl">
       			Docs
