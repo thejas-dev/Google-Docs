@@ -18,7 +18,7 @@ function Header() {
       			color="blue-gray"
       			ripple={true}
       			variant="text"
-      			className="hidden md:inline-flex rounded-full justify-center items-center flex bg-transparent shadow-none hover:shadow-none items-center md:inline-flex h-20 w-20 border-0"
+      			className="rounded-full justify-center items-center flex bg-transparent shadow-none hover:shadow-none items-center md:inline-flex h-20 w-20 border-0 hidden md:inline-flex"
       			>
       			<MenuIcon className="text-blue-500 mx-auto hidden md:inline-flex" />
       			</Button>
